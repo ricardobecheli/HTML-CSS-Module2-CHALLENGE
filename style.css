@@ -54,6 +54,7 @@ body {
 header {
     background-image: linear-gradient(rgba(140, 250, 130, 0.5), rgba(1, 51, 1, 0.9)),
     url("imagens/dan-droids.png");
+    background-size: 50% 100%;
     color: white;
     min-width: 150px;z
     line-height: 1em;
@@ -118,21 +119,35 @@ main {
     margin-bottom: 30px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-
 }
 
 main > h1 {
     font-family: var(--android-font);
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    padding: 3px 10px;
+    font-weight: normal;
 }
 
 main > h2 {
     color: var(--cor3);
     font-family: var(--android-font);
+    background-image: linear-gradient(to right, var(--cor0), transparent);
+    padding: 2px 10px;
+    font-weight: normal;
 }
 
 main p {
     margin: 1em 0em;
     text-align: justify;
+    text-indent: 3em;
+    line-height: 2em;
+}
+
+main strong {
+    font-weight: 800;
+    color: var(--cor5);
+    padding: 2px 6px;
+    border-radius: 50%;
 }
 
 main img {
@@ -144,6 +159,69 @@ main img.pequena {
     display: block;
     margin: auto;
 }
+main a {
+    text-decoration: none;
+    background-color: var(--cor5);
+    color: var(--cor0);
+    padding: 2px 6px;
+    border-radius: 17%;
+
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: rgb(255, 174, 0);
+}
+
+.video {
+    background-color: var(--cor5);
+    margin-bottom: 2em;
+    margin: 0em -1em 2em -1em;
+    padding: 1em;
+    padding-bottom: 56.4%;
+    position: relative;
+}
+
+.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+
+.quer-mais {
+    background-image: linear-gradient(to right, var(--cor5), transparent),
+    url("imagens/candy-karsten-winegeart-iBv4UUvKlb4-unsplash.jpg");
+    color: rgb(255, 255, 255);
+    line-height: 1.3em;
+    font-size: 1.5em;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.527);
+}
+
+.quer-mais > ul {
+    list-style-type: none;
+    columns: 2;
+    padding: 1em;
+}
+
+.quer-mais > p {
+    text-indent: 0%;
+    line-height: 1.3em;
+    padding: 0.5em 1em;
+    margin: 0%;
+}
+
+.quer-mais > h3 {
+    background-image: linear-gradient(to bottom, var(--cor5), transparent);
+    color: var(--cor0);
+    padding: 10px;
+    margin: -20px -20 0px -20px;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+}
 
 .notas {
     background-color: #c5ebd6;
@@ -154,7 +232,7 @@ main img.pequena {
 footer {
     background-color: var(--cor5);
     color: var(--cor0);
-    padding: 1px;
+    padding: 25px;
     margin: 0%;
     text-align: center;
     font-size: 2em;
@@ -163,4 +241,23 @@ footer {
 footer > p {
     margin: 0%;
     color: var(--cor0);
+}
+
+footer a {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-style: italic;
+    background-color: var(--cor5);
+    color: var(--cor0);
+    padding: 2px 6px;
+    border-radius: 17%;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: rgb(255, 174, 0);
+}
+
+footer a:visited {
+    color: rgb(0, 187, 187);
 }
